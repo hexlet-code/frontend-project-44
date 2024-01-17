@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import { greeting } from './cli.js';
 
 const isPrime = (num) => {
-    if(num === 1) return 'yes';
+  if (num === 1) return 'yes';
   for (let i = 2; i < num; i += 1) {
     if (num % i === 0) return 'no';
   }
