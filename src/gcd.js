@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { greeting } from './cli.js';
+import greeting from './cli.js';
 
 const getRandomInt = (max = 100) => Math.floor(Math.random() * max);
 const getGcd = (a, b) => {
@@ -9,7 +9,7 @@ const getGcd = (a, b) => {
   return getGcd(b, a % b);
 };
 
-export const gcd = () => {
+export default () => {
   const name = greeting();
   console.log('Find the greatest common divisor of given numbers.');
   for (let i = 0; i <= 2; i += 1) {

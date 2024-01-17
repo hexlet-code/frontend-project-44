@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { greeting } from './cli.js';
+import greeting from './cli.js';
 
 const getRandomInt = (max = 100) => Math.floor(Math.random() * max);
 const createArrayProgression = (lengthArray = 5) => {
@@ -12,7 +12,7 @@ const createArrayProgression = (lengthArray = 5) => {
   return progression;
 };
 
-export const progression = () => {
+export default () => {
   const name = greeting();
   console.log('What number is missing in the progression?');
 

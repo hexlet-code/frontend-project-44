@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
-import { greeting } from './cli.js';
+import greeting from './cli.js';
 
 const getRandomInt = (max = 100) => Math.floor(Math.random() * max);
 
-export const calc = () => {
+export default () => {
   const name = greeting();
   const operators = ['+', '-', '*'];
   const operation = {

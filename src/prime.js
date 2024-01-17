@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { greeting } from './cli.js';
+import greeting from './cli.js';
 
 const isPrime = (num) => {
   if (num === 1) return 'yes';
@@ -9,7 +9,7 @@ const isPrime = (num) => {
   return 'yes';
 };
 const getRandomInt = (max = 100) => Math.floor(Math.random() * max);
-export const prime = () => {
+export default () => {
   const name = greeting();
 
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
