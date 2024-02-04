@@ -4,7 +4,7 @@
 
 ## To start the game, enter in the name of the game:
 
-:**brain-even** Игра: "Проверка на чётность"
+**brain-even** Игра: "Проверка на чётность"
 
 **brain-calc** Игра: "Калькулятор"
 
@@ -15,7 +15,7 @@
 **brain-prime** Игра "Простое ли число?"
 
 ## Brain-even
-<a href="https://asciinema.org/a/636199" target="_blank"><img src="https://asciinema.org/a/636199" /></a>
+<a href="https://asciinema.org/a/499988" target="_blank"><img src="https://asciinema.org/a/499988.svg" /></a>
 
 ## Brain-calc
 <a href="https://asciinema.org/a/499989" target="_blank"><img src="https://asciinema.org/a/499989.svg" /></a>
