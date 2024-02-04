@@ -1,7 +1,9 @@
 import readlineSync from 'readline-sync';
 import greeting from './cli.js';
+import getRandomInt from '../game_modules/getRandomInt.js';
+import question from '../game_modules/question.js';
+import wrongAnswer from '../game_modules/wrongAnswer.js';
 
-const getRandomInt = (max = 100) => Math.floor(Math.random() * max);
 const getGcd = (a, b) => {
   if (!b) {
     return a;
@@ -16,13 +18,13 @@ export default () => {
     const operandsOne = getRandomInt();
     const operandsTwo = getRandomInt();
     const trueAnswer = getGcd(operandsOne, operandsTwo);
-
-    console.log(`Question: ${operandsOne} ${operandsTwo}`);
+    question(`${operandsOne} ${operandsTwo}`);
     const answer = readlineSync.question('Your answer: ');
 
     if (Number(answer) === trueAnswer) console.log('Correct!');
     else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.\nLet's try again, ${name}!`);
+      wrongAnswer(answer, trueAnswer, name);
+
       return;
     }
   }
